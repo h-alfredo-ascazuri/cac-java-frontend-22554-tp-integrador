@@ -1,0 +1,366 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*cambiar si me pinta*/
+}
+
+/* HEADER */
+header{
+    height: 100px;
+    background: #353a40;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    height: 10vh;
+}
+header h4{
+    color: white;
+}
+.menu a{
+    color: gray;
+    text-decoration: none;
+    padding: 0px 10px;
+    transition: 0.4s;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: white;
+}
+
+#check{
+    display: none;
+}
+
+/*CONFERENCIA*/
+#conferencia{
+    padding: 0px 50px;
+    background-image: url(./images/ba1.jpg);
+    height: 89vh;
+    background-size: cover;
+    background-position: center;
+}
+#conferencia::before{
+    content:'';
+    background: rgba(44, 35, 35, 0.562);
+    position: absolute;
+    width: 100%;
+    height: 89vh;
+    left: 0;
+}
+.contenido-conferencia{
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-conferencia h3{
+    font-size: 30px;
+    padding: 10px 0px;
+    text-align: end;
+}
+.contenido-conferencia p{
+    padding: 10px 0px;
+    text-align: end;
+    margin-left: 25vw;
+}
+.boton-ser-orador{
+    padding: 10px 0px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    align-self: flex-end;
+    transition: all 0.4s;
+}
+.boton-tickets{
+    padding: 10px 0px;
+    display: inline-block;
+    background-color: #27a844;
+    border: 1px solid #27a844;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    align-self: flex-end;
+    transition: all 0.4s;
+}
+
+.boton-ser-orador:hover{
+    border: 1px solid gray;
+
+}
+.boton-tickets:hover{
+    background: none;
+    border: 1px solid gray;
+}
+
+/*ORADORES*/
+#oradores{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#oradores img{
+    border-radius: 2%;
+    
+}
+#oradores div{
+    padding: 30px 40px;
+}
+#oradores div h4{
+    margin: 15px 0px;
+}
+#oradores div p{
+    text-align: left;
+    color: gray;
+}
+.boton-js{
+    margin-top: 20px;
+    font-size: 60%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: #ffc900;
+    border-radius: 5%;
+    padding: 5px;
+}
+.boton-r{
+    margin-top: 20px;
+    font-size: 60%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #33a1d4;
+    border-radius: 5%;
+    padding: 5px;
+}
+.boton-negocios{
+    margin-top: 20px;
+    font-size: 60%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    border-radius: 5%;
+    padding: 5px;
+}
+.boton-start{
+    margin-top: 20px;
+    font-size: 60%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+/*LUGAR Y FECHA*/
+#lugar-fecha{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#lugar-fecha img{
+    width: 50vw;
+}
+#lugar-fecha div{
+    background: #353a40;
+}
+#lugar-fecha div h3{
+    margin: 15px  0px;
+    padding: 0px 15px;
+    text-align: left;
+    color: white;
+}
+#lugar-fecha div p{
+    margin: 0px 0px 50px 0px;
+    padding: 0px 15px;
+    text-align: left;
+    color: white;
+}
+.boton-lugar-fecha{
+    margin: 50px;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+.boton-lugar-fecha:hover{
+    border: 1px solid gray;
+}
+
+/*CONVIERTETE EN ORADOR*/
+#conviertete-en-orador{
+    padding: 50px 0px;
+}
+#conviertete-en-orador h6{
+    text-align: center;
+    margin-bottom: 5px;
+}
+#conviertete-en-orador h1{
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+#conviertete-en-orador p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#conviertete-en-orador form{
+    max-width: 80%;
+    margin: 0px auto;
+}
+.datos-form{
+    display: flex;
+}
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+form label{
+    display: block;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+form input,
+form textarea{
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 10px 5px;
+    outline: 0;
+    width: 100%;
+}
+form input:focus,
+form textarea:focus{
+    border-color: black;
+    box-shadow: 0px 0px 0px 1px black;
+}
+.tema{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#conviertete-en-orador label{
+    color: gray;
+}
+.boton-form .boton-tickets{
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+}
+.boton-form .boton-tickets:hover{
+    color: gray;
+}
+
+/*FOOTER*/
+#footer{
+    padding: 50px 150px;
+    background: #1c3846;
+}
+.contenido-footer{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-footer div{
+    flex: 1;
+    margin: 20px 0px;
+}
+.contenido-footer a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+
+}
+.contenido-footer a:hover{
+    color: gray;
+}
+
+/*RESPONSIVE*/
+@media(max-width: 1048px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh; /*viewport height stupid*/
+        background: #2d2d3d;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~.menu{
+        right: 0;
+    }
+
+    /*ORADORES*/
+    #oradores{
+        flex-direction: column;
+    }
+    
+
+    /*LUGAR Y FECHA*/
+    #lugar-fecha{
+    flex-direction: column;
+    }
+    #lugar-fecha img{
+        width: 100vw;
+    }
+
+    /*CONVIERTETE EN ORADOR*/
+    .datos-form{
+        flex-direction: column;
+    }
+
+    /*FOOTER*/
+    #footer{
+        display: block;
+    }
+    .contenido-footer{
+        flex-direction: column;
+    }
+    .contenido-footer a{
+        padding: 10px;
+    }
+}

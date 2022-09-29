@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conf Bs As</title>
+</head>
+<body>
+    <!--SECCION MENU-->
+    <header>
+        <img src="./images/codoacodo.png" alt="logo codo a codo" class="logo">
+        <h4>Conf Bs As</h4>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        
+        <nav class="menu">
+            <a href="#conferencia">La conferencia</a>
+            <a href="#oradores">Los oradores</a>
+            <a href="#lugar-fecha">El lugar y la fecha</a>
+            <a href="#conviertete-en-orador">Conviértete en orador</a>
+            <a href="#tickets" style="color: #27a844;">Comprar Tickets</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <!--SECCION CONFERENCIA-->
+    <section id="conferencia">
+        <div class="contenido-conferencia">
+            <h3>Conf Bs As</h3>
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            <a href="#conviertete-en-orador" class="boton-ser-orador">Quiero ser orador</a>
+            <a href="tickets" class="boton-tickets">Comprar Tickets</a>
+        </div>
+    </section>
+
+    <!--SECCION ORADORES-->
+    <section id="oradores">
+        <div>
+            <img src="./images/steve.jpg" alt="foto Steve Jobs">
+            </br>
+            <a href="#" class="boton-js">JavaScript</a>
+            <a href="#" class="boton-r">React</a>
+            <h4>Steve Jobs</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam similique labore nemo cupiditate expedita culpa, eum dolor tenetur recusandae vitae temporibus id neque alias laboriosam iusto totam! Sit, ad doloribus!</p>
+        </div>
+        <div>
+            <img src="./images/bill.jpg" alt="foto Bill Gates">
+            </br>
+            <a href="#" class="boton-js">JavaScript</a>
+            <a href="#" class="boton-r">React</a>
+            <h4>Bill Gates</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam similique labore nemo cupiditate expedita culpa, eum dolor tenetur recusandae vitae temporibus id neque alias laboriosam iusto totam! Sit, ad doloribus!</p>
+        </div>
+        <div>
+            <img src="./images/ada.jpeg" alt="foto Ada Lovelace">
+            </br>
+            <a href="#" class="boton-negocios">Negocios</a>
+            <a href="#"class="boton-start">Startups</a>
+            <h4>Ada Lovelace</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam similique labore nemo cupiditate expedita culpa, eum dolor tenetur recusandae vitae temporibus id neque alias laboriosam iusto totam! Sit, ad doloribus!</p>
+        </div>
+    </section>
+
+    <!--SECCION LUGAR Y FECHA-->
+    <section id="lugar-fecha">
+        <div>
+            <img src="./images/honolulu.jpg" alt="foto de Honolulu">
+        </div>
+        <div>
+            <h3>Bs As - Octubre</h3>
+            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidanses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidad que cubre toda la ciudad (aproximadamente 600 km² de superficie)</p>
+            <a href="#lugar-fecha" class="boton-lugar-fecha">Conocé más</a>
+        </div>
+    </section>
+    
+    <!--SECCION CONVIERTETE EN ORADOR-->
+    <section id="conviertete-en-orador">
+        <h6>CONVIÉRTETE EN UN</h6>
+        <h1>ORADOR</h1>
+        <P>Anótate como orador para dar la charla ignite. Cuéntanos de qué quieres hablar!</P>
+        <form action="#">
+            <div class="datos-form">
+                <div class="nombre">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="apellido">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="tema">
+                <textarea name="tema" id="tema" cols="30" rows="10" placeholder="Sobre qué quieres hablar?">
+                </textarea>
+                <label for="titulo">Recuerda incluir un título para tu charla</label>
+            </div>
+            <div class="boton-form">
+                <a href="#" class="boton-tickets">Enviar</a>
+            </div>
+        </form>
+    </section>
+
+    <!--FOOTER FONDO DE WEB-->
+    <section id="footer">
+        <div class="contenido-footer">
+            <a href="#Preguntas-frecuentes">Preguntas <br>frecuentes</a>
+            <a href="#Contactenos">Contáctenos</a>
+            <a href="#Prensa">Prensa</a>
+            <a href="#Conferencias">Conferencias</a>
+            <a href="#Terminos-y-condiciones">Términos y <br>condiciones</a>
+            <a href="#Privacidad">Privacidad</a>
+            <a href="#Estudiantes">Estudiantes</a>
+        </div>
+    </section>
+</body>
+</html>

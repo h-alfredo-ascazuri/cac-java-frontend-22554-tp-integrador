@@ -277,6 +277,144 @@ form textarea:focus{
     color: gray;
 }
 
+/*PROMOCIONES*/
+#promociones{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#promociones div{
+    padding: 30px 40px;
+}
+#promociones div h2{
+    margin: 15px 0px;
+}
+#promociones div h3{
+    margin: 15px 0px;
+}
+#promociones div h4{
+    margin: 15px 0px;
+}
+#promociones .border1{
+    border: 2px solid blue;
+    margin: 0px 1%;
+}
+#promociones .border2{
+    border: 2px solid green;
+    margin: 0px 1%;
+}
+#promociones .border3{
+    border: 2px solid #ffc900;
+    margin: 0px 1%;
+}
+#promociones div p{
+    text-align: left;
+    color: gray;
+}
+/*TICKETS.HTML*/
+#tickets{
+    padding: 50px 0px;
+}
+#tickets h5{
+    text-align: center;
+    margin-bottom: 5px;
+}
+#tickets h1{
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+#tickets p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#tickets form{
+    max-width: 80%;
+    margin: 0px auto;
+}
+.datos-tickets{
+    display: flex;
+}
+.datos-tickets div{
+    padding: 10px;
+    flex: 1;
+}
+.correo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.cantidad{
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.categoria select{
+    width: 100%;
+    padding: 10px 20px;
+    display: inline-block;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.total_a_pagar{
+    background-color: rgb(124, 229, 255);
+    color: rgb(38, 132, 255);
+    width: 100%;
+    padding: 10px 20px;
+    display: inline-block;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.datos-tickets label{
+    margin-bottom: 5px;
+}
+boton-formjsint{
+    padding: 100%
+}
+input[type=reset]{
+    position: relative;
+    width: 20%;
+    margin: 0 13%;
+    padding: 10px 50px;
+    display: inline-block;
+    background-color: #27a844;
+    border: 1px solid #27a844;
+    color: white;
+    border-radius: 5px;
+    align-self: flex-end;
+    transition: all 0.4s;
+}
+#resumen{
+    position: relative;
+    width: 20%;
+    margin: 0 13%;
+    padding: 10px 50px;
+    display: inline-block;
+    background-color: #27a844;
+    border: 1px solid #27a844;
+    color: white;
+    border-radius: 5px;
+    align-self: flex-end;
+    transition: all 0.4s;
+}
+input[type=reset]:hover{
+    color: gray;
+    border: 1px solid gray;
+    background: white;
+}
+#resumen:hover{
+    color: gray;
+    border: 1px solid gray;
+    background: white;
+}
+
 /*FOOTER*/
 #footer{
     padding: 50px 150px;
@@ -352,6 +490,19 @@ form textarea:focus{
     .datos-form{
         flex-direction: column;
     }
+
+        /*PROMOCIONES*/
+        #promociones{
+            flex-direction: column;
+        }
+    
+        /*TICKETS*/
+        .datos-tickets{
+            flex-direction: column;
+        }
+        input[type=reset], #resumen{
+            flex-direction: column;
+        }
 
     /*FOOTER*/
     #footer{
